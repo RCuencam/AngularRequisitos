@@ -10,11 +10,15 @@ import { RequisitosService } from 'src/app/services/requisitos.service';
 export class RequisitosListComponent implements OnInit {
 
   dataSource: Requisito[] = [];
-  displayedColumns: string[] = ['id_Requisitos', 'Requisito'];
+  displayedColumns: string[] = ['id', 'Requisito'];
 
   constructor(private requisitoService: RequisitosService) { }
 
   ngOnInit(): void {
+    this.getRequisitos();
+  }
+
+  getRequisitos(): void {
     this.requisitoService.getRequisitos().subscribe(data => {
       this.dataSource = data;
     })

@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Registro de Autores</h1>
+    <form [formGroup]="form" (submit)="registrar()">
+        <mat-form-field class="example-full-width">
+            <mat-label>Código</mat-label>
+            <input type="code" matInput formControlName="id">
+            <mat-error *ngIf="form.get('id')?.hasError('required')">
+              El código es <strong>obligatorio.</strong>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Nombre</mat-label>
+            <input type="text" matInput formControlName="Requisito">
+            <mat-error *ngIf="form.get('Requisito')?.hasError('required')">
+              El nombre es <strong>obligatorio.</strong>
+            </mat-error>
+        </mat-form-field>
+        <div class="buttons">
+            <button type="submit" mat-raised-button color="primary">Aceptar</button>
+            <button routerLink="/" mat-raised-button color="warn">Cancelar</button>
+        </div>
+    </form>
+</div>

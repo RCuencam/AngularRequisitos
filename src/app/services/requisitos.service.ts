@@ -15,4 +15,8 @@ export class RequisitosService {
   getRequisitos() {
     return this.http.get<Requisito[]>(`${this.url}/Requisitos`);
   }
+
+  createRequisito(requisito: Requisito) {
+    return this.http.post(`${this.url}/Requisitos`, requisito);
+  }
 }

@@ -1,6 +1,6 @@
 module.exports = function () {
   var data = {
-    Perfil_Empresa: [
+    Perfil_Empresa: [ 
       {
         id_Empresa:1,
         nombre_Empresa: "Interbank",
@@ -28,19 +28,19 @@ module.exports = function () {
     ],
     Requisitos: [
         {
-          id_Requisitos:1,
+          id:1,
           Requisito: "Autodidacta, Ingeniero de Software, Ingeniero de Sistemas",
         },
         {
-          id_Requisitos:2,
+          id:2,
           Requisito: "Autodidacta, Comunicaciones, Lider",
         },
         {
-          id_Requisitos:3,
+          id:3,
           Requisito: "Autodidacta, Lider, Ingeniero de Software, Ingeniero de Sistemas",
         },
         {
-          id_Requisitos:4,
+          id:4,
           Requisito: "Autodidacta, Ingeniero de Software, Ingeniero de Sistemas",
         }
       ],

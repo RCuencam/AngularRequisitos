@@ -1,4 +1,4 @@
 export interface Requisito {
-    id_Requisitos: number;
+    id: number;
     Requisito: string;
 }

@@ -1,3 +1,28 @@
-table {
+.container {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.container table{
     width: 100%;
+}
+
+.container .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.container .buttons button {
+    margin: 0 5px;
+}
+
+.container .buttons button:last-child {
+    margin-right: 0;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 20px 0;
 }
